@@ -95,6 +95,11 @@ You will need to provide valid values for the user ids.
   }
 }
 ```
+Now, you can click the ➡️ send execute the POST request.
+
+Below is an example of what the screen should look like if the request is successful.
+![Bruno-Environment](./images/Bruno-Create-Meeting.jpg)
+
   
 
 
