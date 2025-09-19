@@ -29,20 +29,18 @@ collections/
 ```
 
 ## Running Requests
-1. Select Environment
+1. **Select Environment**
 - Click the environment dropdown (top-right)
 - Choose the appropriate environment (local, staging, production, Graph)
 
-2. Execute Requests
-- Navigate to any .bru file in the collection
-- Click the "Send" button
+2. **Execute Requests**
+- Navigate to any `.bru` file in the collection
+- Click the "**Send**" button
 - Review the response in the response panel
 
-3. View Request Details
-- Headers: Check request/response headers
-- Body: View request payload and response data
-
-Variables are referenced using double curly braces: {{baseUrl}}/users
+3. **View Request Details**
+- **Headers**: Check request/response headers
+- **Body**: View request payload and response data
 
 ## Environment Variables
 Bruno uses environment-specific variables for different deployment stages:
@@ -52,18 +50,16 @@ Bruno uses environment-specific variables for different deployment stages:
 - **Production Environment**: https://api.example.com
 
 Variables are referenced using double curly braces: `{{baseUrl}}/users`
-Authentication
+
+## Authentication
 Most API collections include authentication setup:
 
-Run Authentication Request
+1. **Run Authentication Request**
+- Navigate to the auth folder**
+- Execute the login request
+- Copy the authentication token from the response
 
-Navigate to the auth folder
-Execute the login request
-Copy the authentication token from the response
-
-
-Set Auth Token
-
-Go to Collection Settings
-Set the authorization header or use environment variables
-Token will be automatically included in subsequent requests
+2. **Set Auth Token**
+- Go to Collection Settings
+- Set the authorization header or use environment variables
+- Token will be automatically included in subsequent requests
