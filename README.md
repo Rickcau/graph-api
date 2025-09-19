@@ -68,6 +68,9 @@ This POST request will use the **client_id** and **client_secret** you setup in 
 
 Copy the **Bearer Token**, then go back into your **Environment** configuration and now paste in your **Bearer Token** into the **bearer_token** variable and save.  Now, at this point all your requests will use the variables that are are saved in the **Environment** configuration.
 
+Below is an example of what the screen looks like when you authenticate and you will see the `access_token` in the response.
+![Bruno-Environment](./images/Bruno-Auth.jpg)
+
 ### Now test the creation of the meeting
 1. Bruno should still be open, if not, launch Bruno.
 2. Open the collection and and select the `Test Meeting CreationA' operation.
