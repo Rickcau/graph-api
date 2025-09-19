@@ -31,7 +31,7 @@ collections/
 ## Running Requests
 1. Select Environment
 - Click the environment dropdown (top-right)
-- Choose the appropriate environment (local, staging, production)
+- Choose the appropriate environment (local, staging, production, Graph)
 
 2. Execute Requests
 - Navigate to any .bru file in the collection
@@ -44,16 +44,14 @@ collections/
 
 Variables are referenced using double curly braces: {{baseUrl}}/users
 
-
-
-Environment Variables
+## Environment Variables
 Bruno uses environment-specific variables for different deployment stages:
 
-Local Environment: http://localhost:3000
-Staging Environment: https://staging-api.example.com
-Production Environment: https://api.example.com
+- **Local Environment**: http://localhost:3000
+- **Staging Environment**: https://staging-api.example.com
+- **Production Environment**: https://api.example.com
 
-Variables are referenced using double curly braces: {{baseUrl}}/users
+Variables are referenced using double curly braces: `{{baseUrl}}/users`
 Authentication
 Most API collections include authentication setup:
 
