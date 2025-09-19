@@ -19,7 +19,10 @@ Before starting, ensure you have:
 - **HTTP testing tool** (Bruno, Postman, etc.)
 
 ## 🥇 Use of Graph API to create Teams Meeting
-For this first example, I have provided all the details that will allow you to create Meetings that allow for for multiple organizers, co-organizers and external particapants.  The important item to note here is that you **must** use `Application Permissions` not `Delegated Permissions` and you must have a Teams Policy in-place that specifies who can create meetings.  
+For this first example, I have provided all the details that will allow you to create **meetings** that allow for for multiple organizers, co-organizers and external particapants.  The important item to note here is that you **must** use `Application Permissions` not `Delegated Permissions` and you must have a Teams Policy in-place that specifies who can create meetings.  
 
 All these details of **how to do this** are spelled out in the materials found 👉 here [teams](./teams/readme.md)
+
+🎯 **Important* 🎯
+You cannot use `https://graph.microsoft.com/v1.0/me/onlineMeetings` to create meetings for others!  When this endpoint is used, it will **always** create the meeting using the identity of the user that the credential belongs to.  If the **goal** is to create meetings for any that has the proper Application permissions, in this case (Teams permissions), then you need to leveage the `https://graph.microsoft.com/v1.0/me/onlineMeetings` endpoint.
 
