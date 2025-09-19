@@ -18,7 +18,7 @@ Before starting, ensure you have:
 - **PowerShell execution** permissions
 - **HTTP testing tool** (Bruno, Postman, etc.)
 
-## 🥇 Use of Graph API to create Teams Meeting
+## 🥇 Use of Graph API to create a Teams Meeting
 For this first example, I have provided all the details that will allow you to create **meetings** that allow for for multiple organizers, co-organizers and external particapants.  The important item to note here is that you **must** use `Application Permissions` not `Delegated Permissions` and you must have a Teams Policy in-place that specifies who can create meetings.  
 
 ## 🎯 **Important* 🎯
