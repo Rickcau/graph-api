@@ -103,6 +103,11 @@ Now, you can click the ➡️ send execute the POST request.
 Below is an example of what the screen should look like if the request is successful.
 ![Bruno-Environment](./images/Bruno-Create-Meeting.jpg)
 
+# 👏 Congratulations 👏
+You have successfully leveraged the Graph API and properly configured all the artifacts in Azure that were needed for the use-case.
+
+
+
   
 
 
