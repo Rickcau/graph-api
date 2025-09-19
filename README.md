@@ -25,12 +25,12 @@ For this first example, I have provided all the details that will allow you to c
 You cannot use `https://graph.microsoft.com/v1.0/me/onlineMeetings` to create meetings for others!  When this endpoint is used, it will **always** create the meeting using the identity of the user that the credential belongs to.  If the **goal** is to create meetings for anyone that has the proper Application permissions, in this case (Teams permissions), then you need to leveage the `https://graph.microsoft.com/v1.0/me/onlineMeetings` endpoint.
 
 ### Initial State (Meeting Start)
-#### Only the meeting organizer can:**
+#### Only the meeting organizer can:
 - Create the first breakout rooms
 - Assign the first breakout room managers
 - Set up the initial breakout room structure
 
-#### After Initial Setup**
+#### After Initial Setup
 Once the organizer delegates permissions, then:
 
 - Co-organizers can create breakout rooms and assign additional managers
