@@ -41,9 +41,8 @@ Co-organizers can manage breakout rooms only during the live meeting. They canno
 
 ## Let's dive into the Teams Meeting scenario
 1. Click 👉 [here](./teams/readme.md) for instructions on how to create the Application Registeraion, Teams Policy in Azure.
-2. Install Bruno and verify that everything is working properly using the Bruno collection found [here](
+2. Install Bruno and leverage the Graph collection to verify that everything is working properly.  Click [here](./collections/readme.md) for details on installing Bruno and using the collection.
 
-## 
 
 
 
