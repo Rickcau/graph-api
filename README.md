@@ -40,7 +40,8 @@ Once the organizer delegates permissions, then:
 Co-organizers can manage breakout rooms only during the live meeting. They cannot pre-create rooms or pre-assign participants before the meeting starts.
 
 ## Let's dive into the Teams Meeting scenario
-Click 👉 [here] for instructions on how to create the Application Registeraion, Teams Policy in Azure.  
+1. Click 👉 [here](./teams/readme.md) for instructions on how to create the Application Registeraion, Teams Policy in Azure.
+2. Install Bruno and verify that everything is working properly using the Bruno collection found [here](
 
 ## 
 
