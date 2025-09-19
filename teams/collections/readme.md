@@ -17,7 +17,7 @@ The Graph collection is a collection of various Graph endpoints that can be used
 
 ## Collection Structure
 Bruno collections are organized as folders containing .bru files:
-
+```
 collections/
 ├── Graph/                  # User-related endpoints
 │   ├── environments/       # Environment variables
@@ -26,6 +26,7 @@ collections/
 │   ├── Test Authentication.bru
 │   ├── Test Grpah Authentication.bru
 └── README.md               # Documentation
+```
 
 ## Running Requests
 1. Select Environment
