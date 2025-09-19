@@ -1,0 +1,55 @@
+meta {
+  name: Meeting Event
+  type: http
+  seq: 7
+}
+
+post {
+  url: https://graph.microsoft.com/v1.0/users/{{user_id2}}/events
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{bearer_token}}
+}
+
+body:json {
+  {
+    "subject": "Project Sync",
+    "start": {
+      "dateTime": "2025-09-30T14:00:00",
+      "timeZone": "Eastern Standard Time"
+    },
+    "end": {
+      "dateTime": "2025-09-30T15:00:00",
+      "timeZone": "Eastern Standard Time"
+    },
+    "attendees": [
+      {
+        "emailAddress": {
+          "address": "codewith@MngEnv364940.onmicrosoft.com",
+          "name": "Colleague"
+        },
+        "type": "required"
+      }
+    ],
+    "isOnlineMeeting": true,
+    "onlineMeetingProvider": "teamsForBusiness"
+  }
+}
+
+body:form-urlencoded {
+  client_secret: jto8Q~ehvh1QGZia.gVQy7MGodczyczAIp~zJck-
+  scope: https://graph.microsoft.com/.default
+}
+
+docs {
+  This post will also fail as we do not have the proper permissions set for the app registeration to allow this.
+  
+  This request would actually created meeting so it's visible in the Teams calendar 
+}

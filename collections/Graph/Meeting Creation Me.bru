@@ -1,0 +1,38 @@
+meta {
+  name: Meeting Creation Me
+  type: http
+  seq: 6
+}
+
+post {
+  url: https://graph.microsoft.com/v1.0/me/onlineMeetings
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{bearer_token}}
+}
+
+body:json {
+  {
+  "joinMeetingIdSettings":{"isPasscodeRequired":false},"subject": "SUCCESS! CodeWith as Organizer",
+    "startDateTime": "2025-09-20T00:30:00.000Z",
+    "endDateTime": "2025-09-20T01:30:00.000Z"
+  }
+}
+
+body:form-urlencoded {
+  client_secret: jto8Q~ehvh1QGZia.gVQy7MGodczyczAIp~zJck-
+  scope: https://graph.microsoft.com/.default
+}
+
+docs {
+  This request will fail as this example does not you delegated permissions, it leverages application permissions!!!
+  
+  You would have to change your app registeration for this to work.
+}

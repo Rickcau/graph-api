@@ -1,0 +1,48 @@
+meta {
+  name: Test Meeting Creation
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://graph.microsoft.com/v1.0/users/{{user_id1}}/onlineMeetings
+  body: json
+  auth: bearer
+}
+
+headers {
+  Content-Type: application/json
+}
+
+auth:bearer {
+  token: {{bearer_token}}
+}
+
+body:json {
+  {
+    "startDateTime": "2025-09-20T14:30:00-07:00",
+    "endDateTime": "2025-09-20T15:00:00-07:00",
+    "subject": "Minimal Working Meeting",
+    "participants": {
+      "attendees": [
+        {
+          "identity": {
+            "user": {
+              "id": "5fe8496f-12d6-43da-9fcb-0b2184ad30d0"
+            }
+          },
+          "role": "coorganizer"
+        },
+      {
+          "upn": "steve.smith@company.com",
+          "role": "presenter"
+      }
+      ]
+    }
+  }
+}
+
+body:form-urlencoded {
+  client_secret: jto8Q~ehvh1QGZia.gVQy7MGodczyczAIp~zJck-
+  scope: https://graph.microsoft.com/.default
+}

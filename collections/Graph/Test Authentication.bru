@@ -1,0 +1,22 @@
+meta {
+  name: Test Authentication
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://login.microsoftonline.com/{{tenant_id}}/oauth2/v2.0/token
+  body: formUrlEncoded
+  auth: none
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  grant_type: client_credentials
+  client_id: a9a34d8e-b5f1-4dac-8c0a-5decd3076ad8
+  client_secret: jto8Q~ehvh1QGZia.gVQy7MGodczyczAIp~zJck-
+  scope: https://graph.microsoft.com/.default
+}

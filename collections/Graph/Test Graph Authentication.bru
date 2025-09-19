@@ -1,0 +1,15 @@
+meta {
+  name: Test Graph Authentication
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://graph.microsoft.com/v1.0/users/{{user_id2}}
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{bearer_token}}
+}
