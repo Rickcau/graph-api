@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the recommended architecture for integrating Microsoft Graph API operations within Foundry Agent workflows while maintaining security best practices and API-First principles.
+This document outlines a recommended architecture for integrating Microsoft Graph API operations within Foundry Agent workflows while maintaining security best practices and API-First principles.
 
 ## Architecture Pattern
 
