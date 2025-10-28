@@ -1802,7 +1802,7 @@ The tension between API-First and Agent principles represents a broader shift in
 - [OAuth 2.0 Security Best Practices](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics)
 
 **AI Agent Architectures:**
-- [Microsoft Agent Framework] (https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/)
+- [Microsoft Agent Framework](https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/)
 - [Microsoft Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/)
 
 **Microsoft Graph API Security:**
